@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#links {
+  color: white;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+#links:hover {
+  background: #f7f8f8;
+  color: red;
+  text-shadow: 1px 1px 2px #ccc;
+  border-radius: 1px;
+  box-shadow: 0 0 5px s, 0 0 25px white, 0 0 50px #ffffff, 0 0 200px #ffffff;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, white);
+}
+#links:nth-child(1) {
+  filter: hue-rotate(270sdeg);
+}
+#links:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+::selection {
+  background-color: black;
+  color: #ffffff;
+}
